@@ -13,7 +13,10 @@ import java.util.List;
 
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://day-tale-frontend-lcbv.vercel.app"
+})
 @RequestMapping("/entries")
 public class EntryController {
 
